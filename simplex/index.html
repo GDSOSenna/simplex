@@ -20,22 +20,19 @@
       <p>JS Simplex</p>
     </div>
     <div class="box-1">
-      <p>
+      <form name="var">
         Número de variáveis de decisão:
         <input type="number" name="variable" id="variable" size="2">
-      </p>
+      </form>
     </div>
     <div class="box-2">
-      <p>
+      <form name="rest">
         Número de restrições:
         <input type="number" name="r" id="r" size="2">
-      </p>
-    </div>
-    <div>
-      
+      </form>
     </div>
     <div class="box-">
-      <input id="button-1" type="button" name="but" value="Calcular" onclick="gerar()">
+      <input id="button-1" type="button" name="but" value="Calcular" onclick="gerar(document.var.variable.value,document.rest.r.value)">
     </div>
   </main>
   <footer></footer>
